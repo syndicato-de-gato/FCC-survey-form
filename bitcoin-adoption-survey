@@ -100,7 +100,6 @@
                         would like to learn more about it<br>
                         <input type="checkbox" name="interest-in-btc" value="interested">I have a great amount of
                         interest in Bitcoin and have started looking into it on my own<br>
-                        <input type="submit" value="Submit">
                     </div>
                     <div id="comments-suggestions"><br>
                         <label id="textarea-label">Questions or comments?</label><br>

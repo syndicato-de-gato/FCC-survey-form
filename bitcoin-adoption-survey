@@ -1,0 +1,110 @@
+<DOCTYPE html>
+    <html>
+    <header>
+        <style>
+            body {
+                background-color:ghostwhite;
+            }
+            header {
+                font-weight: bold;
+                text-align: center;
+                margin: 15px;
+                padding: 5px;
+                font-size: 100%;
+                word-wrap: break-word;
+                position: relative;
+            }
+            .survey-form {
+                font-size: 100%;
+                padding: 10px;
+                word-wrap: break-word;
+                position: relative;
+            }
+            .personal-info {
+                font-size: 100%;
+                padding: 10px;
+                word-wrap: break-word;
+                position: relative;
+            }
+            .dropdown-list{
+                font-size: 100%;
+                padding: 10px;
+                word-wrap: break-word;
+                position: relative;
+            }
+            .label {
+                font-size: 100%;
+                padding: 10px;
+                word-wrap: break-word;
+                position: relative;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bitcoin Adoption Survey</title>
+    </header>
+
+    <body>
+        <h1 id="title">Bitcoin Adoption Survey</h1>
+        <div><p id="description" >Please participate in our Bitcoin adoption survey.</p></div>
+        <div id="form">
+            <form id="survey-form" class="survey-form" action="https://crossorigin.me/https://freecodecamp.com" method="get">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <div id="personal-info" class="personal-info">
+                        <label id="name-label" class="label">Name:<br>
+                            <input id="name" type="text" name="name" placeholder="Please enter your name" required></label><br>
+                        <label id="email-label" class="label">Email:<br>
+                            <input id="email" type="email" name="email" placeholder="Please enter your email" required></label><br>
+                        <label id="number-label" class="label">Age:<br>
+                            <input id="number" type="number" name="number" placeholder="Please enter your age" min="0" max="125"
+                                required></label><br></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Survey Questions</legend><br>
+                    <div id="dropdown-list" class="dropdown-list">
+                        <label id="dropdown-question" for="current-knowledge">Please choose the response that best
+                            describes
+                            your
+                            current Bitcoin knowledge level</label>
+                        <select id="dropdown" name"current-knowledge">
+                            <option value="nocoiner">Bitcoin? I have never heard of it.</option>
+                            <option value="novice">I have heard of Bitcoin and I'm vaguely familiar with what it is.</option>
+                            <option value="intermediate">I know about Bitcoin and plan on buying some soon.</option>
+                            <option value="advanced">I have been familiar with Bitcoin for some time and I already own
+                                some.</option>
+                        </select><br></div>
+                    <div id="multiple-choice-question">
+                        <label id="multiple-choice">What kind of future role do you see for Bitcoin?</label><br>
+                        <input type="radio" name="choice" value="fail" checked>I think Bitcoin is a scam that will
+                        fail
+                        miserably.<br>
+                        <input type="radio" name="choice" value="novelty">I think Bitcoin is a novelty that will
+                        not
+                        live
+                        up to it's epic hype.<br>
+                        <input type="radio" name="choice" value="promise">I think Bitcoin shows a lot of promise
+                        to
+                        really revolutionize our financial system.<br>
+                        <input type="radio" name="choice" value="gamechanger">I think Bitcoin is a gamechanger and
+                        will be
+                        the new global currency and financial system.<br></div>
+                    <div id="checkbox-question">
+                        <div class="label">
+                            <label for="checkbox-question">Please Describe your interest in Bitcoin</label><br>
+                        </div>
+                        <input type="checkbox" name="interest-in-btc" value="none" checked>I have no interest in Bitcoin at all<br>
+                        <input type="checkbox" name="interest-in-btc" value="some">I have some interest in Bitcoin and would like to learn more about it<br>
+                        <input type="checkbox" name="interest-in-btc" value="interested">I have a great amount of interest in Bitcoin and have started looking into it on my own<br>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div id="comments-suggestions"><br>
+                        <label id="textarea-label">Questions or comments?</label><br>
+                        <textarea id="textarea" name="comments" style="width:200px; height:50px"></textarea><br></div>
+                    <div id="submit-button"><br>
+                        <input id="submit" type="submit" value="Submit"><br></div>
+                </fieldset>
+
+
+            </form>
+        </div>
+    </body>

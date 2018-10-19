@@ -45,7 +45,9 @@
 
     <body>
         <h1 id="title">Bitcoin Adoption Survey</h1>
-        <div><p id="description" >Please participate in our Bitcoin adoption survey.</p></div>
+        <div>
+            <p id="description">Please participate in our Bitcoin adoption survey.</p>
+        </div>
         <div id="form">
             <form id="survey-form" class="survey-form" action="https://crossorigin.me/https://freecodecamp.com" method="get">
                 <fieldset>
@@ -56,8 +58,8 @@
                         <label id="email-label" class="label">Email:<br>
                             <input id="email" type="email" name="email" placeholder="Please enter your email" required></label><br>
                         <label id="number-label" class="label">Age:<br>
-                            <input id="number" type="number" name="number" placeholder="Please enter your age" min="0" max="125"
-                                required></label><br></div>
+                            <input id="number" type="number" name="number" placeholder="Please enter your age" min="0"
+                                max="125" required></label><br></div>
                 </fieldset>
                 <fieldset>
                     <legend>Survey Questions</legend><br>
@@ -92,9 +94,12 @@
                         <div class="label">
                             <label for="checkbox-question">Please Describe your interest in Bitcoin</label><br>
                         </div>
-                        <input type="checkbox" name="interest-in-btc" value="none" checked>I have no interest in Bitcoin at all<br>
-                        <input type="checkbox" name="interest-in-btc" value="some">I have some interest in Bitcoin and would like to learn more about it<br>
-                        <input type="checkbox" name="interest-in-btc" value="interested">I have a great amount of interest in Bitcoin and have started looking into it on my own<br>
+                        <input type="checkbox" name="interest-in-btc" value="none" checked>I have no interest in
+                        Bitcoin at all<br>
+                        <input type="checkbox" name="interest-in-btc" value="some">I have some interest in Bitcoin and
+                        would like to learn more about it<br>
+                        <input type="checkbox" name="interest-in-btc" value="interested">I have a great amount of
+                        interest in Bitcoin and have started looking into it on my own<br>
                         <input type="submit" value="Submit">
                     </div>
                     <div id="comments-suggestions"><br>
